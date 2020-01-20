@@ -1,0 +1,639 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(247, 244, 240);
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 9;
+    background:  #f2f2f2;
+}
+
+.header {    
+    grid-column:1/4;    
+    background-color:hsl(28.7, 100%, 50%);
+   
+    display: flex;
+    justify-content: space-around; 
+     
+}
+#buscador , #logo , #entradas{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#logo img{
+    
+    -chrome-width: 100%;
+    height: 100px;
+
+}
+
+#buscador input {
+    width: 80%;
+
+height: max-content;
+
+margin-left: 5px;
+
+background: #c3c3c3;
+}
+#entradas img{
+    width: 60px;
+    height: 50px;
+
+}
+#entradas p {
+    width: 15px;
+height: 20px;
+display: flex;
+justify-content: center;
+border-radius: 75%;
+background: #1385e2;
+color: rgb(0, 0, 0);
+}
+
+.menu {
+    grid-column:1/4;
+}
+.menu ul {
+    background: rgb(19, 133, 226);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li:hover {
+    background:  rgb(0, 0, 0,0.6)   
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.slider {
+    grid-column: 1/4;
+    
+}
+.slider img {
+    width: 100%;
+    
+}
+
+#pagination{
+    display: flex;
+    justify-content: center;
+    list-style: circle;
+    width: 100%; 
+}
+#pagination li{
+    font-size: 30px;
+    margin: 5px 7px;
+    color: #858585;
+    cursor: pointer;
+    
+}
+
+
+
+.pasos{
+    
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    
+    
+}
+#paso1, #paso2, #paso3{
+      
+      background-color:  #f2f2f2;
+      height: 100px;
+      width: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;      
+}
+
+h3 {
+    grid-column:  2/4;
+    display: inline-flex;
+    justify-content:flex-start;
+    text-transform: uppercase;
+    font-size: 26px;
+    padding: 5%;
+    color: #1385e2;
+
+}
+
+.eventos {
+ grid-column: 1/4;
+ display: inline-flex;
+ justify-content: space-around;
+     
+}
+.eventos1{
+ grid-column: 1/4;
+ display: inline-flex;
+ justify-content: space-around;
+}
+
+
+#cajaEvento {
+    background: hsl(28.7, 100%, 50%);
+    
+    width: 20%;
+    
+    margin: 20px 30px ;
+    padding: 5px;
+    
+}
+.eventos img {
+    
+    width: 100%;  
+    
+}
+.eventos1 img {
+    
+    width: 100%;  
+    
+}
+#fechaNombre{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#cajaFecha {
+    font-size: 26px;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    
+}
+#cajaNombre{
+    
+    font-size: 13px;
+    display: inline-flex;
+    flex-direction: column;
+}
+#cajaNombre button {
+    background: #1385e2;
+    color: #f2f2f2;
+    border-radius: 6px;
+}
+#cajaNombre button:hover {
+    background: #0821af80;
+}
+#pago{
+    grid-column: 2/4;
+    color:  #1385e2;
+}
+
+
+.tarjetas{
+   display: flex;
+   grid-column: 1/4;
+   justify-content: space-around;
+   padding-bottom: 4%;
+}
+#tarjetas img{
+    width:100%;
+    height: 60px;
+}
+
+.footer{
+    grid-column: 1/4;
+    width: 100%;
+    height: 100%;
+    background-color: #413a3a;
+    color:#f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.footer h5{
+padding-top: 5%;
+padding-bottom: 5%;
+
+}
+
+.footer p{
+    margin: 0;
+    padding-left: 5%;
+    font-size: 11px;
+}
+#menuInferior a{
+    text-decoration: none;
+    color:#f2f2f2;
+    
+}
+
+#redesSociales img{
+display: inline;
+width: 50px;
+height: 50px;
+
+
+}
+.h2entradas {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+.entradasCompradas {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+.tabla {
+    
+    width: 80%;
+    height: 80%;
+    margin: 10px;
+}
+thead {
+    background: hsl(226, 94%, 21%);
+    color: #eedddd;
+}
+.tr-gris {
+    background: rgb(180, 180, 180);
+    text-align: center;
+}
+.tr-blanco {
+    background: #f3e3b8;
+    text-align: center;
+}
+.tabla tbody tr td a {
+ text-decoration: none;
+border-radius: 3px;
+height: 70%;
+margin-top: 10px;
+padding-left: 3px;
+padding-right: 3px;
+background-color: rgb(19, 133, 226);
+color: rgb(0, 0, 0);
+}
+.boton-compra {
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background:  rgb(19, 133, 226);
+    border-radius: 3px;
+    margin: 3px;
+}
+.tabla tbody tr td a :hover{
+    background:  rgb(0, 0, 0,0.6);
+}
+.boton-compra:hover {
+    background:  rgb(0, 0, 0,0.6);
+
+}
+.formulario {
+    grid-column: 1/4;
+    width: 100%;
+    padding: 5%;
+}
+.tituloEvento {
+grid-column: 1/4;
+display: flex;
+justify-content: center;
+padding: 10px;
+color: #1385e2;
+
+}
+#inscripcion{
+grid-column: 1/2;
+display: flex;
+justify-content: center;
+color: #000;
+font-size: 17px;
+}
+.agregarPersona {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+#dni ,#nombre, #apellido, #sacarPersona{
+    border: 2px solid hsl(28.7, 100%, 50%);
+    border-radius: 5px;
+    margin: 5px;
+}
+#sacarPersona {
+    background: #1385e2;
+    color: #f2f2f2;
+    font-size: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+
+.fotoYevento {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+
+}
+.foto {
+    display: flex;
+    width: 40%;
+    margin: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+
+}
+.foto img {
+    width: 100%;
+}
+.datos {
+    border: 1px solid;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+   background: #a8a4a4
+}
+
+.mensajeError{
+    visibility: hidden;
+    background: #ff4b4b;
+    padding-left: 13px;
+    color: white;
+    transition: 0.7s;
+}
+
+.error{
+    
+    border: 2px solid #ff0000;
+}
+#ubicacion {
+   
+    grid-column: 1/4;
+    display: inline-flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    padding: 5%;
+    color: #1385e2;
+
+}
+.mapa{
+    border: solid;
+    grid-column: 1/4;
+    padding: 10px;
+}
+iframe {
+   width: 100%;
+    
+}
+.contacto {
+    grid-column: 1/4;
+display: flex;
+justify-content: center;
+color: #1385e2;
+margin: 18px;
+}
+ 
+.formularioContacto {
+    grid-column: 1/4;
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+}
+
+.formularioContacto form, .infoContacto {
+
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+.botonInscripcion {
+    grid-column: 1/2;
+
+width: 80px;
+
+display: flex;
+
+justify-content: center;
+
+margin: auto;
+}
+.importe {
+    grid-column: 1/2;
+
+    width: 80px;
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    margin: auto;
+    padding: 10px;
+}
+.personalizacion {
+grid-column: 1/4;
+display: flex;
+justify-content: center;
+width: 100%;
+
+}
+.vistaPrevia {
+    display: flex;
+width: 50%;
+margin: 20px;
+border: 1px solid;
+border-radius: 5px;
+background: #01ff00;
+}
+.invitacion {
+    border: 1px solid;
+margin: 15px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+border-radius: 5px;
+padding: 10px;
+width: 50%;
+}
+.color {
+    margin: 10px;
+}
+.color p , .ubicacionFecha p {
+    display: flex;
+
+    justify-content: space-around;
+    
+    width: 80%;
+}
+.color input {
+    margin: 3px;
+}
+.tituloVistaPrevia {
+    margin: 10px;
+}
+.pixel {
+display: flex;
+margin: 10px;
+
+justify-content: space-around;
+
+width: 80%;
+}
+.fechaYhora {
+    margin: 10px;
+
+}
+#confirmar {
+    margin: 10px;
+
+width: 80%;
+
+background: #1385e2;
+}
+
+.invitacion h3 {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 650px) {
+   
+    .menu ul {
+        justify-content: center;
+
+    }
+    
+    .pasos {
+        grid-column: 1/4;
+        display: inline-flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #buscador , #logo , #entradas{
+    width: 30%;
+    }
+    .eventos {
+        grid-column: 1/4;
+        display: inline-flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+            
+       }
+       .eventos1 {
+        grid-column: 1/4;
+        display: inline-flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+            
+       }
+    #cajaEvento {
+        width: 60%;
+        margin: 10px 10px;
+    }
+    .entradasCompradas {
+        grid-column: 1/4;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        
+    }
+    .tabla thead, th {
+        border: none;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+     }
+     .tabla tr{
+        border-bottom: 3px solid; 
+      }
+   
+      .tabla td {
+       border-bottom: 1px solid #ddd;
+       display: block;
+       font-size: 1.2em;
+       text-align: right;
+       padding: 10px;
+     }
+     .tabla td:before {
+        content: attr(data-label);
+        float: left;
+        color: #1385e2;
+        
+     }
+
+      table.tablaPrecios td:last-child{
+        text-align: center;
+     }
+     .fotoYevento {
+         flex-direction: column;
+     }
+     .agregarPersona {
+         flex-direction: column;
+         width: 80%;
+         padding: 15px;
+     }
+     
+     .foto {
+         width: 80%
+     }
+    .formularioContacto {
+        
+        flex-direction: column;
+        width: 100%;
+        margin: 10px;
+    }
+    .formularioContacto form, .infoContacto{
+        width: 80%;
+        
+    }
+    .personalizacion {
+        display: flex;
+        align-items: center;
+    flex-direction: column;
+    }
+    .pixel {
+        display: flex;
+flex-direction: column;
+align-items: flex-end;
+width: 25%;
+    }
+    .vistaPrevia {
+        height: 160px;
+        background: #fb0200;
+    }
+}
